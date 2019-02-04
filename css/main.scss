@@ -59,7 +59,7 @@ h3{font-size: 1.8rem;}
 
 /* frequently used p styles */
 p{
-	font-size:1.2rem;
+	font-size:1.4rem;
 	color: $black;
 	padding: 0rem;
 	margin: 1 0rem;
@@ -460,7 +460,7 @@ section{
 				/* mobile */
 				@media only screen and (max-width: 649px){
 					width: 100%;
-					margin: 0 20%;
+					margin: 0 15%;
 					img{width: 100%;}
 				}
 			}
