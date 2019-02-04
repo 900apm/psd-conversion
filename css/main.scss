@@ -12,9 +12,9 @@
 	padding: 0.83rem;
 	border-radius: 1rem;
 	z-index: 1;
-	/* to make sure skip-link will never ever show */
+	/* to make sure skip-link will never show */
 	opacity: 0;
-	left: -999999999999px;
+	left: -99999px;
 
 
 	p{
@@ -32,8 +32,11 @@
 
 /* universal styles */
 
-/* 1rem = 10px */
-html{font-size: 62.5%;}
+html{
+	/* 1rem = 10px */
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
 
 .wrapper{
 	width: 80%;
@@ -257,11 +260,13 @@ header{
 
 			.dropdown{
 				position: absolute;
+				top: 25px;
 				right: 0;
-				display: flex;
 				flex-direction: column;
 				text-align: right;
 				display: none;
+				opacity: 0;
+				transition: 0.5s;
 
 				p{
 					transition: all 0.5s;
@@ -273,7 +278,11 @@ header{
 			@media only screen and (max-width: 649px){
 				display: inline-block;
 				font-size: 3rem;
-				&:hover ul.dropdown{display: inline-block;}
+				&:hover ul.dropdown{
+					display: inline-block;
+					opacity: 1;
+					transition: 0.5s;
+				}
 			}
 		}
 		
@@ -458,7 +467,13 @@ section{
 				}
 				
 				/* mobile */
-				@media only screen and (max-width: 649px){
+				@media only screen and (max-width: 650px){
+					width: 100%;
+					margin: 0 20%;
+					img{width: 100%;}
+				}
+				/* mobile <  */
+				@media only screen and (max-width: 500px){
 					width: 100%;
 					margin: 0 15%;
 					img{width: 100%;}
