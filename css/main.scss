@@ -62,13 +62,14 @@ h3{font-size: 1.8rem;}
 
 /* frequently used p styles */
 p{
-	font-size:1.4rem;
+	font-size:1.2rem;
 	color: $black;
 	padding: 0rem;
 	margin: 1 0rem;
 	&.crimson{
 		font-family: $crim;
 		line-height: 1.5;
+		font-size:1.3rem;
 	}
 	&.mont,
 	&.orange-button{
@@ -236,7 +237,7 @@ header{
 	}
 
 		/* mobile */
-	@media only screen and (max-width: 649px){
+	@media only screen and (max-width: 650px){
 		h1{font-size: 2.5rem;}
 		h2{font-size: 1.2rem;}
 	}
@@ -275,7 +276,7 @@ header{
 			}
 
 			/* mobile */
-			@media only screen and (max-width: 649px){
+			@media only screen and (max-width: 750px){
 				display: inline-block;
 				font-size: 3rem;
 				&:hover ul.dropdown{
@@ -308,7 +309,7 @@ header{
 			}
 
 			/* mobile */
-			@media only screen and (max-width: 649px){
+			@media only screen and (max-width: 750px){
 				&.desk{display: none;}
 			}
 		}
@@ -336,9 +337,8 @@ header{
 			background-color: rgba(0, 0, 0, 0);
 			transition: all 0.5s;
 			&:hover{
-				border-radius: 2rem;
 				background-color: rgba(0, 0, 0, 0.1);
-				border-style: outset;
+				border-style: inset;
 			}
 		}
 	}
@@ -376,9 +376,8 @@ section{
 					background-color: rgba(0, 0, 0, 0.0);
 					transition: all 0.5s;
 					&:hover{
-						border-radius: 2rem;
 						background-color: rgba(0, 0, 0, 0.1);
-						border-style: outset;
+						border-style: inset;
 					}
 
 					/* tablet */
@@ -461,8 +460,8 @@ section{
 				
 				/* tablet */
 				@media only screen and (max-width: 900px) and (min-width: 650px){
-					margin: 1.5rem;
-					width: calc(100% * (1/2) - 3rem);
+					margin: 1.5rem auto;
+					width: calc(80% * (1/2) - 3rem);
 					img{width: 100%;}
 				}
 				
